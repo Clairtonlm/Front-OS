@@ -5,6 +5,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 
 // Application imports
 import { MaterialModule } from './material/material.module';
+import { FooterComponent } from "./views/components/templates/footer/footer.component";
 import { HeaderComponent } from './views/components/templates/header/header.component';
 
 @Component({
@@ -12,10 +13,11 @@ import { HeaderComponent } from './views/components/templates/header/header.comp
   standalone: true,
   imports: [
     CommonModule,
-    RouterOutlet,
-    RouterLink,
+    RouterOutlet,    
+    RouterLink,      
     MaterialModule,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
