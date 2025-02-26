@@ -1,3 +1,28 @@
-<footer class="footer">
-    <span>Sistema OS &copy; 2024</span>
-</footer>
+<mat-toolbar class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <strong>OS System</strong>
+      <span class="version">v1.0.0</span>
+    </div>
+
+    <div class="footer-section">
+      <div class="social-links">
+        <a href="https://github.com/clairton-lima" target="_blank" matTooltip="GitHub">
+          <mat-icon>code</mat-icon>
+        </a>
+        <a href="https://linkedin.com/in/clairton-lima" target="_blank" matTooltip="LinkedIn">
+          <mat-icon>business_center</mat-icon>
+        </a>
+        <a href="mailto:clairton.sistemas@gmail.com" matTooltip="Email">
+          <mat-icon>email</mat-icon>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-section copyright">
+      <span>Desenvolvido por </span>
+      <strong>Clairton Lima</strong>
+      <span> &copy; {{currentYear}}</span>
+    </div>
+  </div>
+</mat-toolbar>

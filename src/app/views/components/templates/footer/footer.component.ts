@@ -6,6 +6,8 @@ import { MaterialModule } from '../../../../material/material.module';
   standalone: true,
   imports: [MaterialModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrl: './footer.component.scss'
 })
-export class FooterComponent { }
+export class FooterComponent {
+  currentYear: number = new Date().getFullYear();
+}
