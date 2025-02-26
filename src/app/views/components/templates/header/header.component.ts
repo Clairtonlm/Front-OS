@@ -2,12 +2,16 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 // Custom Material Module import
+import { RouterLink } from '@angular/router';
 import { MaterialModule } from '../../../../material/material.module';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MaterialModule],
+  imports: [
+    MaterialModule,
+    RouterLink
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

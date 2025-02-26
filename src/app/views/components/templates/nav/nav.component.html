@@ -1,0 +1,29 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button>
+      <mat-nav-list class="nav-list">
+        <div class="nav-header">
+          <img src="assets/logo.png" alt="Logo" class="nav-logo">
+          <h3>Sistema OS</h3>
+        </div>
+        <mat-divider></mat-divider>
+        <ng-container *ngFor="let item of menuItems">
+          <a mat-list-item [routerLink]="item.route" routerLinkActive="active">
+            <mat-icon class="nav-icon">{{item.icon}}</mat-icon>
+            <span class="nav-text">{{item.text}}</span>
+          </a>
+        </ng-container>
+      </mat-nav-list>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>
+  
+  </mat-drawer-container>
+

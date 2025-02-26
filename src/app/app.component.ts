@@ -7,6 +7,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { MaterialModule } from './material/material.module';
 import { FooterComponent } from "./views/components/templates/footer/footer.component";
 import { HeaderComponent } from './views/components/templates/header/header.component';
+import { NavComponent } from './views/components/templates/nav/nav.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { HeaderComponent } from './views/components/templates/header/header.comp
     RouterLink,      
     MaterialModule,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
